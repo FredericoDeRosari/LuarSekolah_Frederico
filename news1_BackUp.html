@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita</title>
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profile.html">Profil & Kontak</a></li>
+            <li><a href="program.html">Program Pelatihan</a></li>
+        </ul>
+    </nav>
+
+    <!-- Berita dan Artikel -->
+    <section>
+        <h2>Berita dan Artikel</h2>
+    
+        <article>
+            <details>
+                <summary><b>Revolusi Industri 4.0: Tantangan dan Peluang</b></summary>
+                <p id="content1">Industri 4.0 menandai transformasi besar dalam cara dunia bekerja, dengan penerapan teknologi canggih seperti Internet of Things (IoT), 
+                    kecerdasan buatan (AI), dan robotika. Perubahan ini membawa tantangan besar bagi tenaga kerja global, terutama dalam hal adaptasi terhadap 
+                    teknologi baru dan peningkatan keterampilan. Namun, di balik tantangan ini, terdapat peluang besar bagi individu yang siap untuk belajar 
+                    dan berinovasi. Pelatihan dalam Industri 4.0 menjadi kunci untuk membantu profesional mengatasi kesenjangan keterampilan dan tetap kompetitif 
+                    di pasar kerja. Program-program ini memberikan wawasan tentang bagaimana teknologi terbaru dapat diterapkan dalam berbagai sektor, 
+                    serta bagaimana memanfaatkan data untuk meningkatkan efisiensi dan produktivitas. Dengan mengikuti pelatihan ini, peserta akan memiliki 
+                    pemahaman yang mendalam tentang revolusi industri modern dan siap menghadapi tantangan di masa depan.</p>
+            </details>
+    
+            <button onclick="speakText('content1')">Bacakan Artikel</button>
+            <button onclick="stopSpeaking()">Berhenti Membaca</button>
+
+            <audio controls>
+                <source src="path-to-audio2.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </article>
+    </section>
+
+    <!-- JavaScript untuk Membaca dan Menghentikan Artikel -->
+    <script>
+        function speakText(elementId) {
+            var text = document.getElementById(elementId).textContent;
+            var speech = new SpeechSynthesisUtterance(text);
+            speech.lang = 'id-ID'; // Mengatur bahasa ke Indonesia
+            window.speechSynthesis.speak(speech);
+        }
+
+        function stopSpeaking() {
+            window.speechSynthesis.cancel(); // Menghentikan pembacaan artikel
+        }
+    </script>
+</body>
+</html>

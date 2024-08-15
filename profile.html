@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Lembaga & Kontak</title>
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profile.html">Profil & Kontak</a></li>
+            <li><a href="program.html">Program Pelatihan</a></li>
+        </ul>
+    </nav>
+
+    <!-- Profil Lembaga Pendidikan -->
+    <section id="profil">
+        <h1>Profil Lembaga Pendidikan</h1>
+        <ul>
+            <li>
+                <dl>
+                    <dt>Nama Lembaga</dt>
+                    <dd><strong>EduOnline Academy</strong></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>Deskripsi</dt>
+                    <dd>Platform pendidikan yang menyediakan kursus online berkualitas dalam berbagai bidang, dengan metode belajar fleksibel dan inovatif.</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>Keunggulan</dt>
+                    <dd>Pengalaman belajar yang didukung oleh para ahli industri, memungkinkan belajar kapan saja dan di mana saja.</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>Tujuan</dt>
+                    <dd>Membantu Anda mencapai kesuksesan profesional dan pribadi melalui pengembangan keterampilan yang relevan.</dd>
+                </dl>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak">
+        <h2>Kontak</h2>
+        <form onsubmit="alert('Terima Kasih telah menghubungi kami, cek email anda untuk melihat balasan.')">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Pesan:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Kirim">
+        </form>
+    </section>
+</body>
+</html>
